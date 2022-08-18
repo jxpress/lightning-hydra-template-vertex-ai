@@ -1,7 +1,12 @@
 services:
-
-
   scripts:
+  
+    ## If you want to add credential of GCP to docker Image, remove comment out below.
+    # volumes:
+    #   - /path/to/credential.json:/tmp/credential.json
+    # environment:
+    #   - GOOGLE_APPLICATION_CREDENTIALS=/tmp/credential.json
+
     # #if you want to use GPU, remove comment out below.
     # deploy:
     #   resources:
