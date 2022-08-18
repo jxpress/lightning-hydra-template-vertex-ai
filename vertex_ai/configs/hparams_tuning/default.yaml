@@ -1,0 +1,28 @@
+
+maxTrialCount: 6
+parallelTrialCount: 2
+studySpec:
+  metrics:
+    - metricId: metric
+      goal: MAXIMIZE
+  parameters:
+    - parameterId: model.optimizer.lr
+      scaleType: UNIT_LOG_SCALE
+      doubleValueSpec:
+        minValue: 1.0e-6
+        maxValue: 1.0e-3
+  # algorithm: RANDOM_SEARCH
+trialJobSpec:
+  workerPoolSpecs:
+    machineSpec:
+      machineType: n1-highmem-2
+      acceleratorType: NVIDIA_TESLA_T4
+      acceleratorCount: 1
+    replicaCount: 1
+    diskSpec:
+      bootDiskType: pd-standard
+      bootDiskSizeGb: 100
+    containerSpec:
+      imageUri: <uri of GCP artifact repository>:<tag> #you can replace it whatever you want
+      command: [./vertex_ai/scripts/hparams_tuning_job/convert_command.sh]
+      args: [experiment=example, hparams_search=vertex_ai]
