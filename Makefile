@@ -47,3 +47,7 @@ train-in-docker: ## Run train.py in docker Image
 docker-push: ## build docker image and push it to GCP. you have to change <uri of GCP artifact repository> below
 	docker build . -t <uri of GCP artifact repository>
 	docker push <uri of GCP artifact repository>
+
+create_custom_job: ## create custom job of Vertex AI
+	chmod +x ./vertex_ai/scripts/custom_job/create_job.sh
+	./vertex_ai/scripts/custom_job/create_job.sh
