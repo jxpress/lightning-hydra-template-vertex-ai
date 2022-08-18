@@ -52,3 +52,7 @@ docker-push: ## build docker image and push it to GCP. you have to change <uri o
 create_custom_job: ## create custom job of Vertex AI
 	chmod +x ./vertex_ai/scripts/custom_job/create_job.sh
 	./vertex_ai/scripts/custom_job/create_job.sh
+	
+create_hparams_tuning_job: ## create hyperparameter tuning job of Vertex AI
+	chmod +x ./vertex_ai/scripts/hparams_tuning_job/create_job.sh
+	./vertex_ai/scripts/hparams_tuning_job/create_job.sh
