@@ -4,7 +4,7 @@ region=""
 gcp_project=""
 config_file=""
 git_hash=$(git rev-parse HEAD)
-display_name = git_hash # you can edit display name whatever you want. defaults is hash value of git
+display_name=$git_hash # you can edit display name whatever you want. defaults is hash value of git
 
 # image_uri is obtained from config_file with the following code
 pip install yaml
