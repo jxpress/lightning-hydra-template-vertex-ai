@@ -44,6 +44,6 @@ debug: ## Enter debugging mode with pdb
 train-in-docker: ## Run train.py in docker Image
 	docker-compose up
 
-docker-push: ## build docker image and push it to GCP. you have to change <uri of GCP artifact repository> below
-	docker build . -t <uri of GCP artifact repository>
-	docker push <uri of GCP artifact repository>
+docker-push: ## build docker image and push it to GCP. you have to change <uri of GCP artifact repository> and <tag> below
+	docker build . -t <uri of GCP artifact repository>:<tag>
+	docker push <uri of GCP artifact repository>:<tag>
