@@ -1,5 +1,15 @@
 services:
+
+
   scripts:
+    # #if you want to use GPU, remove comment out below.
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [ gpu ]
     build:
       context: .
     platform: linux/amd64 # for m1 mac
