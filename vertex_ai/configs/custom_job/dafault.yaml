@@ -8,5 +8,5 @@ workerPoolSpecs:
     bootDiskType: pd-standard
     bootDiskSizeGb: 100
   containerSpec:
-    imageUri: <uri of GCP artifact repository>:<tag> #replace it
+    imageUri: <uri of GCP artifact repository>:<tag> #you can replace it whatever you want
     command: ["python3", "src/train.py"]
