@@ -1,0 +1,7 @@
+services:
+  scripts:
+    build:
+      context: .
+    platform: linux/amd64 # for m1 mac
+    command:
+      ["python", "src/train.py"] #, "experiment=example", "debug=limit_batches"]
