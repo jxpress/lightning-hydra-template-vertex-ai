@@ -98,8 +98,12 @@ make create-hparams-tuning-job
         - Vertex AIで実行するために必要なコードの追加
 - requirements.txt
     - Vertex AIで必要なライブラリの追加
-- README.md, README_ja.md(日本語バージョン)
-    - 説明の追加
+- README.md
+    - 新たなREADMEの追加. もともとのテンプレートコードのREADMEはDocumentsのフォルダに移動
+- Documents
+    - READMEの日本語バージョン
+    - 翻訳したブログ
+        - hydraとVertex AIについて、詳細に書かれたブログを英訳
 
 
 <h1 id="appendix"> 📝 補足</h1>

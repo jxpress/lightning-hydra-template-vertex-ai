@@ -86,8 +86,13 @@ The following changes have been made in this repository from [train template cod
         - Add code to excecute train job in Vertex AI
 - requirements.txt
     - Add package for Vertex AI
-- README.md, README_ja.md(Japanese version)
-    - Add description
+- README.md
+    - Add README.md. Original README is moved to Documents folder
+- Documents
+    - Move the original README.md
+    - Add the Japanese version of README.md
+    - translated blog
+        - English translation of a detailed blog about hydra and Vertex AI.
 
 
 # 📝 Appendix
