@@ -6,7 +6,7 @@ This document is modified and translated into English from [this blog](https://t
 ---
 Hello, my name is Tanaka and I am an intern on the ML team at JX PRESS Corporation. I have worked on object detection, image matching, text generation, and MLOps. In this blog, I would like to share the difficulties I had trying to run a code written in Hydra with my mentor, Yongtae, a senior ML engineer, on Vertex AI's hyperparameter tuning job, and the solution we found!
 
-## 📎 Background
+## 📎 Introduction
 
 Based on the philosophy of "Focus our power where it should be used" the ML team at JX PRESS Corporation has created template codes for machine learning, including PyTorch Lightning and Hydra.
 
