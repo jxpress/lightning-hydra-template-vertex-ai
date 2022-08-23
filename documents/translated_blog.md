@@ -4,14 +4,14 @@ This document is modified and translated into English from [this blog](https://t
 ![theme_image](/documents/images/theme.png)
 
 ---
-Hello, my name is Tanaka and I am an intern on the ML team at JX News Agency. I have worked on object detection, image matching, text generation, and MLOps. In this blog, I would like to share the difficulties I had trying to run a code written in Hydra with my mentor, Yongtae, a senior ML engineer, on Vertex AI's hyperparameter tuning job, and the solution we found! #TODO 会社の名前の確認
+Hello, my name is Tanaka and I am an intern on the ML team at JX PRESS Corporation. I have worked on object detection, image matching, text generation, and MLOps. In this blog, I would like to share the difficulties I had trying to run a code written in Hydra with my mentor, Yongtae, a senior ML engineer, on Vertex AI's hyperparameter tuning job, and the solution we found!
 
 ## 📎 Background
 
-Based on the philosophy of "Focus our power where it should be used," the ML team at JX News Agency has created template codes for machine learning, including PyTorch Lightning and Hydra. #TODO 会社の名前の確認
+Based on the philosophy of "Focus our power where it should be used," the ML team at JX PRESS Corporation has created template codes for machine learning, including PyTorch Lightning and Hydra.
 
 Please read the explanatory article written by [Yongtae](https://github.com/Yongtae723) about the philosophy and template codes.
-[How we at JX News Agency devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214). # TODO 会社の名前の確認
+[How we at JX PRESS Corporation devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214).
 
 ---
 Training AI takes a lot of time, sometimes several hours per training session.
@@ -40,11 +40,11 @@ If parallel learning could be connected in series, we could benefit from both pa
 
 <br>
 
-One of the values we hold dear at JX News Agency is Speed, and in order to support this philosophy from the ML side as well, we want to finish training faster and speed up the development for our business. # TODO 会社の名前の確認
+One of the values we hold dear at JX PRESS Corporation is Speed, and in order to support this philosophy from the ML side as well, we want to finish training faster and speed up the development for our business.
 
 Therefore, we would like to run many experiments in parallel when optimizing hyperparameters. Such parallel training can be easily achieved using Vertex AI, a fully managed ML service (see example below in Fig.1).
 
-On the other hand, the hyperparameter tuning function of Vertex AI Training is incompatible with Hydra, which is used in the template code of JX News Agency, and we could not use it as it is. # TODO 会社の名前の確認
+On the other hand, the hyperparameter tuning function of Vertex AI Training is incompatible with Hydra, which is used in the template code of JX PRESS Corporation, and we could not use it as it is.
 
 ## 😖 Problem.
 In hyperparameter tuning, the Vertex AI passes hyperparameters to the train containers using command line arguments, and after learning is complete, optimization of the hyperparameters is performed by sending the metric values to the Vertex AI from trian containers.

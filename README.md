@@ -93,13 +93,11 @@ The following changes have been made in this repository from [train template cod
 # 📝 Appendix
 
 
-JX Corp. has created and use the training template code in order to enhance team development capability and development speed. # TODO JX通信社の英訳が正しいのかの確認
+JX PRESS Corporation has created and use the training template code in order to enhance team development capability and development speed.
 
 We have created this repository by transferring only the code for training with Vertex AI from JX's training template code to [Lightning-Hydra-Template](https://github.com/ashleve/lightning-hydra-template).
 
-For more information on JX's training template code, see [How we at JX News Agency devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214). (Now these blogs are written in Japanese. If you want to see, please translate it into your language. We would like to translate it in English and publish it someday) #TODO 会社の名前の確認
-
-
+For more information on JX's training template code, see [How we at JX PRESS Corporation devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214). (Now these blogs are written in Japanese. If you want to see, please translate it into your language. We would like to translate it in English and publish it someday)
 <br>
 
 # 😍 Main contributors
