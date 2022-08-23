@@ -55,8 +55,22 @@ Then [determine the name of the Image](https://cloud.google.com/artifact-registr
 
 <br>
 
-
 ### step 4-1. Run a custom job
+
+- Set the name and tag of the Image determined in step 3 in imageUri of [vertex_ai/configs/custom_job/dafault.yaml](/vertex_ai/configs/custom_job/dafault.yaml).
+- Set region, gcp_project in [vertex_ai/scripts/custom_job/create_job.sh](/vertex_ai/scripts/custom_job/create_job.sh).
+- In the root folder, type
+```bash
+make create-custom-job
+```
+in the root folder.
+Docker build and push will be performed, and the custom job of Vertex AI will be started with the pushed image.
+You can check the training status at [CUSTOM JOBS](https://console.cloud.google.com/vertex-ai/training/custom-jobs) in the Vertex AI training section of GCP.
+
+<br>
+
+
+### step 4-2. Run a hyperparameter tuning job
 
 - Set the name and tag of the Image determined in step 3 in imageUri of  [vertex_ai/configs/hparams_tuning/default.yaml](/vertex_ai/configs/hparams_tuning/default.yaml).
 - Set the metrics that you want optimize in [configs/hparams_search/vertex_ai.yaml](/configs/hparams_search/vertex_ai.yaml).
@@ -65,7 +79,8 @@ Then [determine the name of the Image](https://cloud.google.com/artifact-registr
 ```bash
 make create-hparams-tuning-job
 ```
-in the root folder, docker build and push will be performed, and the custom job of Vertex AI will be started with the pushed image.
+in the root folder.
+Docker build and push will be performed, and the hyperparameter tuning job of Vertex AI will be started with the pushed image.
 
 You can check the training status at [HYPERPARAMETER TUNING JOBS](https://console.cloud.google.com/vertex-ai/training/hyperparameter-tuning-jobs) in the Vertex AI training section of GCP.
 
