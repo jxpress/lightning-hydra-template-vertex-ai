@@ -54,5 +54,6 @@ create-custom-job: ## create custom job of Vertex AI
 	./vertex_ai/scripts/custom_job/create_job.sh
 	
 create-hparams-tuning-job: ## create hyperparameter tuning job of Vertex AI
-	chmod +x ./vertex_ai/scripts/hparams_tuning_job/create_job.sh
-	./vertex_ai/scripts/hparams_tuning_job/create_job.sh
+	chmod +x ./vertex_ai/scripts/hparams_tuning/convert_command.sh 
+	chmod +x ./vertex_ai/scripts/hparams_tuning/create_job.sh
+	./vertex_ai/scripts/hparams_tuning/create_job.sh

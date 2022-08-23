@@ -24,5 +24,5 @@ trialJobSpec:
       bootDiskSizeGb: 100
     containerSpec:
       imageUri: <uri of GCP artifact repository>:<tag> #you can replace it whatever you want
-      command: [./vertex_ai/scripts/hparams_tuning_job/convert_command.sh]
+      command: [./vertex_ai/scripts/hparams_tuning/convert_command.sh]
       args: [experiment=example, hparams_search=vertex_ai]
