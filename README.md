@@ -1,8 +1,10 @@
 # Lightning Hydra Template Vertex AI
 
-[PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) and  [Hydra](https://github.com/facebookresearch/hydra), which is a learning framework and hyperparameter management package, can provide various benefits, such as parallel learning with only a few lines of code changes. The excellent [train template code](https://github.com/ashleve/lightning-hydra-template) created based on these two packages is available for public use. For more information on PyTorch Lightning and Hydra, see [README](/README.original.md) of the template code.
+[PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) and  [Hydra](https://github.com/facebookresearch/hydra), which is a learning framework and hyperparameter management package, can provide various benefits, such as parallel learning with only a few lines of code changes. The excellent [train template code](https://github.com/ashleve/lightning-hydra-template) created based on these two packages is available for public use. For more information on PyTorch Lightning and Hydra, see [README](documents/README.original.md) of the template code.
 
 This repository offer the code that makes the template run on [Vertex AI](https://cloud.google.com/vertex-ai).
+
+the Japanese version of the README is [here](/documents/README_ja.md)
 
 <br>
 
@@ -94,7 +96,7 @@ JX Corp. has created and use the training template code in order to enhance team
 
 We have created this repository by transferring only the code for training with Vertex AI from JX's training template code to [Lightning-Hydra-Template](https://github.com/ashleve/lightning-hydra-template).
 
-For more information on JX's training template code, see [How we at JX News Agency devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214). (Now these blogs are written in Japanese. If you want to see, please translate it into your language. We would like to translate it in English and publish it someday)
+For more information on JX's training template code, see [How we at JX News Agency devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214). (Now these blogs are written in Japanese. If you want to see, please translate it into your language. We would like to translate it in English and publish it someday) #TODO 会社の名前の確認
 
 
 <br>
