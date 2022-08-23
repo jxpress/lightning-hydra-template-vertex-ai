@@ -6,7 +6,7 @@ gcp_project="" # project ID of GCP
 
 
 ## =====you can change below before creating job======
-config_file="vertex_ai/configs/hparams_tuning_job/default.yaml" # the path of config file
+config_file="vertex_ai/configs/hparams_tuning/default.yaml" # the path of config file
 git_hash=$(git rev-parse HEAD)
 display_name=$git_hash # you can edit display name whatever you want. defaults is hash value of git
 
@@ -43,6 +43,7 @@ with open('${config_file}') as f:
 print(config['trialJobSpec']['workerPoolSpecs']['containerSpec']['imageUri'])
 EOF
 )
+echo "USE ${image_uri}"
 
 docker build . -t $image_uri  --platform=linux/x86_64 
 docker push $image_uri
