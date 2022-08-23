@@ -1,6 +1,7 @@
 
 # Problems and solutions when using hyperparameter tuning in Vertex AI for code written in Hydra
 This document is modified and translated into English from [this blog](https://tech.jxpress.net/entry/2022/05/13/113011).
+![theme_image](/documents/images/theme.png)
 
 ---
 Hello, my name is Tanaka and I am an intern on the ML team at JX News Agency. I have worked on object detection, image matching, text generation, and MLOps. In this blog, I would like to share the difficulties I had trying to run a code written in Hydra with my mentor, Yongtae, a senior ML engineer, on Vertex AI's hyperparameter tuning job, and the solution we found! #TODO 会社の名前の確認

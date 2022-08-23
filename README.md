@@ -6,6 +6,7 @@ This repository offer the code that makes the template run on [Vertex AI](https:
 
 the Japanese version of the README is [here](/documents/README_ja.md)
 
+![main_theme](/documents/images/main_readme.png)
 <br>
 
 # 💡　Reason for opening the repository to the public
@@ -22,7 +23,7 @@ However, Vertex AI and Hydra are incompatible because of the different way of pa
 In order to run code written in Hydra on Vertex AI, we need to devise a way to run it.
 In this repository, we have provided the code that has been devised so that you can learn with Vertex AI without difficulty.
 
-For more information on the problem and solution, please see [this blog](). # TODO 英訳しろ！
+For more information on the problem and solution, please see [this blog](/documents/translated_blog.md).
 <br>
 
 # 🚀  How to use this repository

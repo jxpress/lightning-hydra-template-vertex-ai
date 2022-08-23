@@ -3,7 +3,7 @@
 学習フレームワークである [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning)とハイパーパラメーター管理の [Hydra](https://github.com/facebookresearch/hydra)を用いることで、数行のコード変更で並行で学習出来る等、様々な恩恵があり、効率的に学習を進められます。この2つのパッケージをもとに作成された素晴らしい[学習テンプレートコード](https://github.com/ashleve/lightning-hydra-template)が公開されています。PyTorch Lightning やHydraの詳細はテンプレートコードの[README](/documents/README.original.md)を御覧ください。
 
 このレポジトリは、このテンプレートコードが[Vertex AI](https://cloud.google.com/vertex-ai) で実行できるようにコードを追加したものになります。
-
+![main_theme](/documents/images/main_readme.png)
 <br>
 
 ## 💡　一般公開する理由
