@@ -6,12 +6,13 @@ This repository offer the code that makes the template run on [Vertex AI](https:
 
 the Japanese version of the README is [here](/documents/README_ja.md)
 
+![main_theme](/documents/images/main_readme.png)
 <br>
 
 # 💡　Reason for opening the repository to the public
 
 
-Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed. ( (★) can be implemented in this repository, sample code for (*) will also be available)
+Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed. ( (★) can be implemented in this repository, and we will also open sample code for (*))
 - Training that the GPU is activated only during training (★)
 - Parallel training for hyperparameter tuning (★)
 - Separate process such as data preprocessing, training, evaluation, and deployment, and connect each of them in a pipeline for learning (*)
@@ -22,7 +23,7 @@ However, Vertex AI and Hydra are incompatible because of the different way of pa
 In order to run code written in Hydra on Vertex AI, we need to devise a way to run it.
 In this repository, we have provided the code that has been devised so that you can learn with Vertex AI without difficulty.
 
-For more information on the problem and solution, please see [this blog](). # TODO 英訳しろ！
+For more information on the problem and solution, please see [this blog](/documents/translated_blog.md).
 <br>
 
 # 🚀  How to use this repository
@@ -101,7 +102,7 @@ For more information on JX's training template code, see [How we at JX News Agen
 
 <br>
 
-## 🖥Main contributors
+# 😍 Main contributors
 The transfer to this repository was done by [Yongtae](https://github.com/Yongtae723), but the development was conceived and proposed by [Yongtae](https://github.com/Yongtae723) and [near129](https://github.com/near129) led the code development.
 
 <br>

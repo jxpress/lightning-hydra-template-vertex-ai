@@ -3,7 +3,7 @@
 学習フレームワークである [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning)とハイパーパラメーター管理の [Hydra](https://github.com/facebookresearch/hydra)を用いることで、数行のコード変更で並行で学習出来る等、様々な恩恵があり、効率的に学習を進められます。この2つのパッケージをもとに作成された素晴らしい[学習テンプレートコード](https://github.com/ashleve/lightning-hydra-template)が公開されています。PyTorch Lightning やHydraの詳細はテンプレートコードの[README](/documents/README.original.md)を御覧ください。
 
 このレポジトリは、このテンプレートコードが[Vertex AI](https://cloud.google.com/vertex-ai) で実行できるようにコードを追加したものになります。
-
+![main_theme](/documents/images/main_readme.png)
 <br>
 
 ## 💡　一般公開する理由
@@ -102,13 +102,13 @@ make create-hparams-tuning-job
     - 説明の追加
 
 
-<h1 id="appendix">補足</h1>
+<h1 id="appendix"> 📝 補足</h1>
 
 [JX通信社](https://jxpress.net/)では、チームでの開発力や開発速度を高めるために、学習テンプレートコードを作成し運用しています。
 本レポジトリは、JX通信社で利用している学習テンプレートコードから、Vertex AIで学習するためのcodeだけを [Lightning-Hydra-Template](https://github.com/ashleve/lightning-hydra-template)に移植しました。
 JX通信社のテンプレートコードについて、詳しくは[属人化しがちなR&Dをチーム開発するためのJX通信社での工夫](https://tech.jxpress.net/entry/2021/10/27/160154)や[ヘビーユーザーが解説するPyTorch Lightning](https://tech.jxpress.net/entry/2021/11/17/112214)のブログを御覧ください。
 
-# 主なコントリビューター
+# 😍主なコントリビューター
 本レポジトリへの移植は[Yongtae](https://github.com/Yongtae723)が行いましたが、開発は[Yongtae](https://github.com/Yongtae723)が発案・提案を、[near129](https://github.com/near129)がコード開発を主導しました。
 
 # 改善したいポイント
