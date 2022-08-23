@@ -101,7 +101,7 @@ For more information on JX's training template code, see [How we at JX News Agen
 
 <br>
 
-## 🖥Main contributors
+# 😍 Main contributors
 The transfer to this repository was done by [Yongtae](https://github.com/Yongtae723), but the development was conceived and proposed by [Yongtae](https://github.com/Yongtae723) and [near129](https://github.com/near129) led the code development.
 
 <br>
