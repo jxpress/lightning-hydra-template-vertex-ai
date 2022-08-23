@@ -11,7 +11,7 @@ the Japanese version of the README is [here](/documents/README_ja.md)
 # 💡　Reason for opening the repository to the public
 
 
-Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed. ( (★) can be implemented in this repository, sample code for (*) will also be available)
+Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed. ( (★) can be implemented in this repository, and we will also open sample code for (*))
 - Training that the GPU is activated only during training (★)
 - Parallel training for hyperparameter tuning (★)
 - Separate process such as data preprocessing, training, evaluation, and deployment, and connect each of them in a pipeline for learning (*)
