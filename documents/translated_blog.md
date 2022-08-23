@@ -6,9 +6,9 @@ This document is modified and translated into English from [this blog](https://t
 ---
 Hello, my name is Tanaka and I am an intern on the ML team at JX PRESS Corporation. I have worked on object detection, image matching, text generation, and MLOps. In this blog, I would like to share the difficulties I had trying to run a code written in Hydra with my mentor, Yongtae, a senior ML engineer, on Vertex AI's hyperparameter tuning job, and the solution we found!
 
-## 📎 Background
+## 📎 Introduction
 
-Based on the philosophy of "Focus our power where it should be used," the ML team at JX PRESS Corporation has created template codes for machine learning, including PyTorch Lightning and Hydra.
+Based on the philosophy of "Focus our power where it should be used" the ML team at JX PRESS Corporation has created template codes for machine learning, including PyTorch Lightning and Hydra.
 
 Please read the explanatory article written by [Yongtae](https://github.com/Yongtae723) about the philosophy and template codes.
 [How we at JX PRESS Corporation devise for team development of R&D that tends to become a genus](https://tech.jxpress.net/entry/2021/10/27/160154) and [PyTorch Lightning explained by a heavy user](https://techjxpress.net/entry/2021/11/17/112214).
@@ -86,7 +86,7 @@ There are several possible solutions.
 
     → Best, but not sure if it will be supported.
 
-2. Use Optuna, an open source framework for automatic hyperparameter optimization, instead of using Vertex AI's hyperparameter adjustment function.
+2. Use Optuna, an open source framework for automatic hyperparameter optimization, instead of using Vertex AI's hyperparameter tuning function.
 
     → Using Hydra+Optuna in series, not parallel, and complete in one instance is convenient. However, when running it by multiple machines, it is difficult because it is necessary to set up a SQL server. ([About Optuna parallelization](https://optuna.readthedocs.io/en/stable/tutorial/10_key_features/004_distributed.html))
 
@@ -135,7 +135,7 @@ python train.py $(echo $@ | sed -r 's/--([^= ]*)[= ]([^ ]*)/\1=\2/g') # train.py
 Finally, create a script file with this as train.sh, etc., and include it in the Vertex AI [config file](/vertex_ai/configs/hparams_tuning/default.yaml) execution command as `./convert_command.sh`
 
 ## 💡 Result
-As a result of these efforts, Vertex AI was able to compute hyperparameter adjustment in parallel (Figs.2~4). In Figs.3 and 4, there are multiple colored lines at the same time, which means that multiple instances are being trained in parallel.
+As a result of these efforts, Vertex AI was able to compute hyperparameter tuning in parallel (Figs.2~4). In Figs.3 and 4, there are multiple colored lines at the same time, which means that multiple instances are being trained in parallel.
 
 **This allowed me to finish in a few hours what used to take me several days to learn!**
 
@@ -146,17 +146,19 @@ Fig.2 - Each trial of hyperparameter tuning job and the hyperparameter values us
 
 ![fig_3](/documents/images/fig_3.png)
 <p align = "center">
-Fig.3 - CPU utilization transitions during hyperparameter adjustment for Vertex AI. The color of each line corresponds to each trial.
+Fig.3 - CPU utilization transitions during hyperparameter tuning for Vertex AI. The color of each line corresponds to each trial.
 </p>
 
 ![fig_4](/documents/images/fig_4.png)
 <p align = "center">
-Fig.3 - GPU utilization transitions during hyperparameter adjustment for Vertex AI. The color of each line corresponds to each trial.
+Fig.4 - GPU utilization transitions during hyperparameter tuning for Vertex AI. The color of each line corresponds to each trial.
 </p>
 
 
-## 📝 Summary.
-During the Vertex AI hyperparameter adjustment job, we were able to convert the hyperparameters passed from Vertex AI into a format that Hydra could accept by interrupting the script and using regular expressions to convert the parameter format.
+## 📝 
+Conclusion
+
+During the Vertex AI hyperparameter tuning job, we were able to convert the hyperparameters passed from Vertex AI into a format that Hydra could accept by interrupting the script and using regular expressions to convert the parameter format.
 
 This allowed us to adjust the hyperparameters in parallel while using the existing code with Hydra, thus reducing the learning time.
 
