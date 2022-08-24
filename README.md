@@ -90,6 +90,10 @@ You can check the training status at [HYPERPARAMETER TUNING JOBS](https://consol
 
 # 🔧　Changes
 The following changes have been made in this repository from [train template code](https://github.com/ashleve/lightning-hydra-template).
+- Dockerfile
+    - For build docker image, I copied and slightly modified from [the Dockerfile in the branch of original repository](https://github.com/ashleve/lightning-hydra-template/tree/dockerfiles)
+- docker-compose.yaml
+    - To check the operation
 - configs/hparams_search/vertex_ai.yaml
     - Used in hyperparameter tuning of Vertex AI
 - Makefile 
@@ -102,8 +106,8 @@ The following changes have been made in this repository from [train template cod
 - requirements.txt
     - Add package for Vertex AI
 - README.md
-    - Add README.md. Original README is moved to Documents folder
-- Documents
+    - Add README.md. Original README is moved to documents folder
+- documents
     - Move the original README.md
     - Add the Japanese version of README.md
     - translated blog

@@ -87,6 +87,10 @@ make create-hparams-tuning-job
 
 # 🔧　変更点
 本レポジトリでは、[学習テンプレートコード](https://github.com/ashleve/lightning-hydra-template)から以下の変更をしました。
+- Dockerfile
+    - docker imageのため、もとの学習テンプレートの[Dockerfile](https://github.com/ashleve/lightning-hydra-template/tree/dockerfiles)からコピーと多少の編集を行った
+- docker-compose.yaml
+    - To check the operation
 - configs/hparams_search/vertex_ai.yaml
     - Vertex AIのHyperparameter Tuningで利用
 - Makefile 
@@ -99,8 +103,8 @@ make create-hparams-tuning-job
 - requirements.txt
     - Vertex AIで必要なライブラリの追加
 - README.md
-    - 新たなREADMEの追加. もともとのテンプレートコードのREADMEはDocumentsのフォルダに移動
-- Documents
+    - 新たなREADMEの追加. もともとのテンプレートコードのREADMEはdocumentsのフォルダに移動
+- documents
     - READMEの日本語バージョン
     - 翻訳したブログ
         - hydraとVertex AIについて、詳細に書かれたブログを英訳
