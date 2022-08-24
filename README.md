@@ -107,7 +107,7 @@ The following changes have been made in this repository from [train template cod
     - Move the original README.md
     - Add the Japanese version of README.md
     - translated blog
-        - English translation of a detailed blog about hydra and Vertex AI.
+        - English translation of a detailed blog about Hydra and Vertex AI.
 
 
 # 📝 Appendix
