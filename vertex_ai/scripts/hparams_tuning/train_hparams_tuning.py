@@ -2,9 +2,9 @@
 # can be run from any place
 
 import hydra
+import hypertune
 import pyrootutils
 from omegaconf import DictConfig
-import hypertune
 
 # project root setup
 # searches for root indicators in parent dirs, like ".git", "pyproject.toml", etc.
@@ -30,7 +30,7 @@ def main(cfg: DictConfig) -> float:
     metric_value = get_metric_value(
         metric_dict=metric_dict, metric_name=cfg.get("optimized_metric")
     )
-    
+
     hpt = hypertune.HyperTune()
     hpt.report_hyperparameter_tuning_metric(
         hyperparameter_metric_tag="metric", metric_value=metric_value
