@@ -7,17 +7,22 @@ This repository offer the code that makes the template run on [Vertex AI](https:
 the Japanese version of the README is [here](/documents/README_ja.md)
 
 ![main_theme](/documents/images/main_readme.png)
+
+
+**🎉Fortunately, this repository was introduced as [a useful repositorie from the original repository](https://github.com/ashleve/lightning-hydra-template#resources).**
+
 <br>
 
 # 💡　Reason for opening the repository to the public
 
 
-Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed. ( (★) can be implemented in this repository, and we will also open sample code for (*))
+Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed.   
 - Training that the GPU is activated only during training (★)
 - Parallel training for hyperparameter tuning (★)
 - Separate process such as data preprocessing, training, evaluation, and deployment, and connect each of them in a pipeline for learning (*)
 - Periodic or triggered training on GPU machines
 
+where (★) can be implemented in this repository, and we will also open sample code for (*)
 
 However, Vertex AI and Hydra are incompatible because of the different way of passing command line arguments.
 In order to run code written in Hydra on Vertex AI, we need to devise a way to run it.
