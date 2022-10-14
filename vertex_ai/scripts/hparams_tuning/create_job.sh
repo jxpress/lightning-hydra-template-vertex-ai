@@ -45,7 +45,7 @@ EOF
 )
 echo "USE ${image_uri}"
 
-docker build . -t $image_uri  --platform=linux/x86_64 
+docker build . -t $image_uri  --platform=linux/x86_64
 docker push $image_uri
 
 # https://cloud.google.com/sdk/gcloud/reference/ai/hp-tuning-jobs/create?hl=ja

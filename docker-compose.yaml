@@ -1,6 +1,5 @@
 services:
   scripts:
-  
     ## If you want to add credential of GCP to docker Image, remove comment out below.
     # volumes:
     #   - /path/to/credential.json:/tmp/credential.json
@@ -18,5 +17,4 @@ services:
     build:
       context: .
     platform: linux/amd64 # for m1 mac
-    command:
-      ["python", "src/train.py"] #, "experiment=example", "debug=limit_batches"]
+    command: ["python", "src/train.py"] #, "experiment=example", "debug=limit_batches"]
