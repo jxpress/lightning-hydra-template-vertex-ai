@@ -45,7 +45,7 @@ RUN source activate ${CONDA_ENV_NAME} \
     && rm requirements.txt
 
 
-# Set ${CONDA_ENV_NAME} to default virutal environment
+# Set ${CONDA_ENV_NAME} to default virtual environment
 RUN echo "source activate ${CONDA_ENV_NAME}" >> ~/.bashrc
 
 ENV PATH /conda/envs/${CONDA_ENV_NAME}/bin:$PATH
