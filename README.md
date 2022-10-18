@@ -21,7 +21,9 @@ Vertex AI is an integrated machine learning platform on Google Cloud Platform, a
 - Separate process such as data preprocessing, training, evaluation, and deployment, and connect each of them in a pipeline for learning (\*)
 - Periodic or triggered training on GPU machines
 
-where (★) can be implemented in this repository, and we will also open sample code for (\*)
+where (★) can be implemented in this repository.
+
+(\*) : We are happy to open our sample code for **Hydra × Vertex AI Pipeline** in [here](https://github.com/jxpress/hydra-vertex-ai-pipeline)
 
 However, Vertex AI and Hydra are incompatible because of the different way of passing command line arguments.
 In order to run code written in Hydra on Vertex AI, we need to devise a way to run it.
