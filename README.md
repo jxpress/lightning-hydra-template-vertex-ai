@@ -1,18 +1,20 @@
 # Lightning Hydra Template Vertex AI
 
-[PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) and  [Hydra](https://github.com/facebookresearch/hydra), which is a learning framework and hyperparameter management package, can provide various benefits, such as parallel learning with only a few lines of code changes. The excellent [train template code](https://github.com/ashleve/lightning-hydra-template) created based on these two packages is available for public use. For more information on PyTorch Lightning and Hydra, see [README](documents/README.original.md) of the template code.
+This repository offers the code that makes the template run on **[Vertex AI](https://cloud.google.com/vertex-ai) Custom Job and Hyperparameter Tuning Job**.
 
-This repository offer the code that makes the template run on [Vertex AI](https://cloud.google.com/vertex-ai).
+We also published sample code for the **Vertex AI Pipeline and Hydra** in [here](https://github.com/jxpress/hydra-vertex-ai-pipeline).
 
-the Japanese version of the README is [here](/documents/README_ja.md)
+**🎉Fortunately, this repository was introduced as [a useful repositorie from the original repository](https://github.com/ashleve/lightning-hydra-template#resources).**
 
 ![main_theme](/documents/images/main_readme.png)
 
-**🎉Fortunately, this repository was introduced as [a useful repositorie from the original repository](https://github.com/ashleve/lightning-hydra-template#resources).**
+the Japanese version of the README is [here](/documents/README_ja.md)
 
 <br>
 
 # 💡　Reason for opening the repository to the public
+
+[PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) and  [Hydra](https://github.com/facebookresearch/hydra), which is a learning framework and hyperparameter management package, can provide various benefits, such as parallel learning with only a few lines of code changes. The excellent [train template code](https://github.com/ashleve/lightning-hydra-template) created based on these two packages is available for public use. For more information on PyTorch Lightning and Hydra, see [README](documents/README.original.md) of the template code.
 
 Vertex AI is an integrated machine learning platform on Google Cloud Platform, and by using Vertex AI, the following can be easily executed.
 
