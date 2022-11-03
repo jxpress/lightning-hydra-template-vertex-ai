@@ -6,7 +6,7 @@ gcp_project="" # project ID of GCP
 ## =====you can change below before creating job======
 git_hash=$(git rev-parse HEAD)
 display_name=$git_hash # you can edit display name whatever you want. defaults is hash value of git
-config_file="vertex_ai/configs/custom_job/dafault.yaml" # the path of config file
+config_file="vertex_ai/configs/custom_job/default.yaml" # the path of config file
 
 
 ## =====build and push docker image======
