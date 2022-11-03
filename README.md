@@ -27,6 +27,8 @@ where (★) can be implemented in this repository.
 
 (\*) : We are happy to open our sample code for **Hydra × Vertex AI Pipeline** in [here](https://github.com/jxpress/hydra-vertex-ai-pipeline)
 
+
+
 However, Vertex AI and Hydra are incompatible because of the different way of passing command line arguments.
 In order to run code written in Hydra on Vertex AI, we need to devise a way to run it.
 In this repository, we have provided the code that has been devised so that you can learn with Vertex AI without difficulty.
